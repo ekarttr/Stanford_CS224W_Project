@@ -1,7 +1,7 @@
 # Stanford_CS224W_Project
 CS224W Project at Stanford University - Social Network Analytics
 
-## Data Wranling 
+## Data Wrangling 
 
 ### action_proto
 Raw data 
