@@ -2,8 +2,9 @@
 CS224W Project at Stanford University - Social Network Analytics
 
 
-#Data Wranling 
+## Data Wranling 
 
+```sql
 SELECT
   a.player_name,
   b.player_name,
@@ -13,12 +14,14 @@ JOIN [actions_table] as b
   ON a.game_id = b.game_id
 WHERE 
 a.player_name!=b.player_name
+```
 
-
+```sql
 SELECT
   player_name,
   SUM(wins) as loss,
 FROM [actions_table]
 WHERE wins<0
-GROUP BY player_name 
+GROUP BY player_name
+```
 
