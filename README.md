@@ -8,8 +8,8 @@ SELECT
   a.player_name,
   b.player_name,
   b.wins-a.wins AS delta_wins 
-FROM [google-platform-demo:test1_kt.actions] as a
-JOIN [google-platform-demo:test1_kt.actions] as b
+FROM [actions_table] as a
+JOIN [actions_table] as b
   ON a.game_id = b.game_id
 WHERE 
 a.player_name!=b.player_name
